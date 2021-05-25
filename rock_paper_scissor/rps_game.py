@@ -50,7 +50,9 @@ class RPS_Application(Tk):
         reset_button = Button(self, text='Reset', command=self.reset_game)
         reset_button.grid(column=2, row=1, **padding)
 
-        close_button = Button(self, text='Close', command=self.close_game)
+        Style().configure("Close.TButton", foreground="red", background="white")
+        close_button = Button(self, text='Close', command=self.close_game, style="Close.TButton")
+
         close_button.grid(column=1, row=3, **padding)
 
         self.result.grid(column=0, row=1, columnspan=2, **padding)
@@ -86,10 +88,10 @@ class RPS_Application(Tk):
 
         self.set_result_color(str_result, style)
 
-    def set_result_color(self, message='', tp=None):
+    def set_result_color(self, message='', style=None):
         self.result.config(text=message)
-        if tp:
-            self.result.config(style=tp)
+        if style:
+            self.result.config(style=style)
 
     def reset_game(self):
         self.user_choice_var.set("Select an Option")
