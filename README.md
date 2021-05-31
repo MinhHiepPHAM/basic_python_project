@@ -6,3 +6,4 @@ The list of mini projects will be updated in this file:
 4. Message encode and decode
 5. Text to speech
 6. Alarm Clock
+7. Messenger Bot (not yet completed)
