@@ -6,7 +6,7 @@ from playsound import playsound
 class Text2Speech(Tk):
     def __init__(self):
         super().__init__()
-        self.title('Rock Paper Scissor Game')
+        self.title('Text to speech')
         self.geometry("300x150")
 
         self.user_choice_var = StringVar()
