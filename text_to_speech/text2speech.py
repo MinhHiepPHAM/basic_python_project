@@ -63,7 +63,7 @@ class Text2Speech(Tk):
             playsound("output.mp3")
 
     def reset(self):
-        self.text_var.config(text='')
+        self.text_var.set('')
 
     def close(self):
         self.destroy()
