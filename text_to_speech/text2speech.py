@@ -9,7 +9,6 @@ class Text2Speech(Tk):
         self.title('Text to speech')
         self.geometry("300x150")
 
-        self.user_choice_var = StringVar()
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
         self.columnconfigure(2, weight=1)
